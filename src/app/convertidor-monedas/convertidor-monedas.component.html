@@ -1,0 +1,8 @@
+<div class="convertidor-container">
+  <label for="cantidadQuetzales">Cantidad en Quetzales:</label>
+  <input type="number" class="cantidadQuetzales" [(ngModel)]="cantidadEnQuetzales" />
+  <button class="convertidor-button" (click)="convertirADolares()">Convertir a Dólares</button>
+  <p class="resultado" *ngIf="resultadoEnDolares !== undefined">
+    Resultado en Dólares: ${{ resultadoEnDolares | number:'1.2-2' }}
+  </p>
+</div>
